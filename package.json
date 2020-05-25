@@ -1,0 +1,33 @@
+{
+  "name": "create-react-tailwind-app",
+  "version": "0.1.0",
+  "description": "A react starter with tailwind and webpack",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gigincg/create-react-tailwind-app.git"
+  },
+  "author": "Gigin George",
+  "license": "MIT",
+  "keywords": [
+    "React",
+    "react-js",
+    "tailwind",
+    "create-react-app"
+  ],
+  "engines": {
+    "node": ">=8"
+  },
+  "bugs": {
+    "url": "https://github.com/gigincg/create-react-tailwind-app/issues"
+  },
+  "homepage": "https://github.com/gigincg/create-react-tailwind-app#readme",
+  "dependencies": {
+    "inquirer": "^7.0.3"
+  },
+  "bin": {
+    "cra": "./index.js"
+  }
+}
