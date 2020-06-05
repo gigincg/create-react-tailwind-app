@@ -12,10 +12,11 @@
     "tailwindcss": "^1.4.6"
   },
   "scripts": {
+    "purge:css": "cross-env NODE_ENV=production postcss src/tailwind.css -o src/index.css",
     "build:css": "postcss src/tailwind.css -o src/index.css",
     "watch:css": "postcss src/tailwind.css -o src/index.css -w",
-    "start": "concurrently --kill-others \"npm run watch:css\" \"react-scripts start\"",
-    "build": "react-scripts build",
+    "start": "npm run build:css && react-scripts start",
+    "build": "npm run purge:css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -37,7 +38,7 @@
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.2.0",
     "autoprefixer": "^9.8.0",
-    "concurrently": "^5.2.0",
+    "cross-env": "^7.0.2",
     "cssnano": "^4.1.10",
     "postcss-cli": "^7.1.1"
   }
