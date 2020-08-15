@@ -1,7 +1,9 @@
 module.exports = {
   important: true,
   //Purging for Production is configured in PostCSS Config
-  purge:false,
+  purge:{    
+    content: ["./src/**/*.html", "./src/**/*.jsx", "./src/**/*.js"],
+  },
   theme: {
     extend: {},
   },

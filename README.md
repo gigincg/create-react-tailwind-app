@@ -28,7 +28,7 @@ Follow the instructions in `README.md`
 
 ### CRA
 
-Add create reason react app globally
+Add create react app globally
 
 ```sh
 npm i -g create-react-tailwind-app
